@@ -53,6 +53,7 @@ tPromise<QIcon>* MetadataRepository::iconForComponent(AppStream::Component compo
     return tPromise<QIcon>::runOnNewThread([ = ](tPromiseFunctions<QIcon>::SuccessFunction res, tPromiseFunctions<QIcon>::FailureFunction rej) {
         if (component.icons().isEmpty()) {
             res(QIcon::fromTheme("generic-app"));
+            return;
         }
 
         QUrl url = component.icons().first().url();
