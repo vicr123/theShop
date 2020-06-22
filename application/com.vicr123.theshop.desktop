@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=theShop
+GenericName=Software Store
+GenericName[vi]=Cửa hàng phần mềm
+Exec=theshop
+Icon=theshop
+Categories=Utility;
+Keywords=software;shop;app store;

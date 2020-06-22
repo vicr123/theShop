@@ -1,19 +1,21 @@
 QT       += core gui thelib network
+SHARE_APP_NAME = theshop
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 CONFIG += c++11
 TARGET = theshop
 
+# Include the-libs build tools
+include(/usr/share/the-libs/pri/buildmaster.pri)
+
 unix {
     CONFIG += link_pkgconfig
     PKGCONFIG += packagekitqt5
     INCLUDEPATH += /usr/include/packagekitqt5/PackageKit
 
-#    exists($$[QT_INSTALL_LIBS]/libAppStreamQt.so) {
-        INCLUDEPATH += /usr/include/AppStreamQt/
-        LIBS += -lAppStreamQt
-#    }
+    INCLUDEPATH += /usr/include/AppStreamQt/
+    LIBS += -lAppStreamQt
 }
 
 # The following define makes your compiler emit warnings if you use
@@ -46,10 +48,21 @@ FORMS += \
     mainwindow.ui \
     updates/updateswidget.ui
 
-# Default rules for deployment.
-qnx: target.path = /tmp/$${TARGET}/bin
-else: unix:!android: target.path = /opt/$${TARGET}/bin
-!isEmpty(target.path): INSTALLS += target
+unix {
+    target.path = /usr/bin/
+
+    desktop.path = /usr/share/applications
+    desktop.files = com.vicr123.theshop.desktop
+
+    icon.path = /usr/share/icons/hicolor/scalable/apps/
+    icon.files = icons/theshop.svg
+
+    INSTALLS += target icon desktop
+}
+
 
 RESOURCES += \
     resources.qrc
+
+DISTFILES += \
+    com.vicr123.theshop.desktop

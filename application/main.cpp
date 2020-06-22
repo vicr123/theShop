@@ -20,10 +20,28 @@
 #include "mainwindow.h"
 
 #include "metadatarepository.h"
-#include <QApplication>
+#include <tapplication.h>
 
 int main(int argc, char* argv[]) {
-    QApplication a(argc, argv);
+    tApplication a(argc, argv);
+
+    if (QDir("/usr/share/theshop/").exists()) {
+        a.setShareDir("/usr/share/theshop/");
+    } else if (QDir(QDir::cleanPath(QApplication::applicationDirPath() + "/../share/theshop/")).exists()) {
+        a.setShareDir(QDir::cleanPath(QApplication::applicationDirPath() + "/../share/theshop/"));
+    }
+    a.installTranslators();
+
+    a.setApplicationIcon(QIcon::fromTheme("theshop", QIcon(":/icons/theshop.svg")));
+    a.setApplicationVersion("1.0");
+    a.setGenericName(QApplication::translate("main", "Software Store"));
+    a.setAboutDialogSplashGraphic(a.aboutDialogSplashGraphicFromSvg(":/icons/aboutsplash.svg"));
+    a.setApplicationLicense(tApplication::Gpl3OrLater);
+    a.setCopyrightHolder("Victor Tran");
+    a.setCopyrightYear("2020");
+    a.setOrganizationName("theSuite");
+    a.setApplicationName("theShop");
+    a.setDesktopFileName("com.vicr123.theshop");
 
     MetadataRepository::instance();
 
