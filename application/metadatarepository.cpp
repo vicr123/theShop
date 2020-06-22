@@ -24,6 +24,8 @@
 #include <QProcess>
 #include <QDir>
 #include <QLocale>
+#include <QDBusMessage>
+#include <QDBusConnection>
 #include <AppStreamQt/metadata.h>
 #include <AppStreamQt/pool.h>
 #include <AppStreamQt/icon.h>
@@ -43,10 +45,22 @@ QList<AppStream::Component> MetadataRepository::componentById(QString id) {
 }
 
 QList<AppStream::Component> MetadataRepository::componentsByPackageName(QString packageName) {
-    for (AppStream::Component component : d->pool.components()) {
-        if (component.packageNames().contains(packageName)) return {component};
-    }
-    return {};
+    return QtConcurrent::blockingFiltered(d->pool.components(), [ = ](const AppStream::Component & component) {
+        return component.packageNames().contains(packageName);
+    });
+}
+
+QList<AppStream::Component> MetadataRepository::componentsBySearch(QString packageName) {
+    return QtConcurrent::blockingFiltered(d->pool.components(), [ = ](const AppStream::Component & component) {
+        if (component.packageNames().isEmpty()) return false;
+        return component.name().toLower().contains(packageName.toLower());
+    });
+}
+
+QList<AppStream::Component> MetadataRepository::componentsByName(QString name) {
+    return QtConcurrent::blockingFiltered(d->pool.components(), [ = ](const AppStream::Component & component) {
+        return component.name().toLower().contains(name.toLower());
+    });
 }
 
 tPromise<QIcon>* MetadataRepository::iconForComponent(AppStream::Component component, QSize size) {
@@ -69,6 +83,12 @@ tPromise<QIcon>* MetadataRepository::iconForComponent(AppStream::Component compo
             res(icon);
         }
     });
+}
+
+void MetadataRepository::launch(QString desktopEntry) {
+    QDBusMessage message = QDBusMessage::createMethodCall("com.vicr123.theShop.DesktopSession", "/com/vicr123/theShop/DesktopSession", "com.vicr123.theShop.DesktopSession", "LaunchApplication");
+    message.setArguments({desktopEntry.chopped(8)});
+    QDBusConnection::sessionBus().call(message);
 }
 
 MetadataRepository::MetadataRepository(QObject* parent) : QObject(parent) {

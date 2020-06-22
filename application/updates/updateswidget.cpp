@@ -153,8 +153,8 @@ void UpdatesWidget::updatePackagekit() {
                             default:
                                 statusText = tr("Installing updates...");
                                 break;
-
                         }
+                        ui->statusLabel->setText(statusText);
                     });
                     connect(tx, &PackageKit::Transaction::percentageChanged, this, [ = ] {
                         ui->progressBar->setValue(tx->percentage());

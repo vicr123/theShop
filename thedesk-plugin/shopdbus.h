@@ -31,6 +31,7 @@ class ShopDbus : public QObject {
 
     public Q_SLOTS:
         Q_SCRIPTABLE void RebootAndUpdate();
+        Q_SCRIPTABLE void LaunchApplication(QString desktopEntry);
 
     signals:
 

@@ -41,6 +41,8 @@ class MainWindow : public QMainWindow {
 
         void on_updatesButton_toggled(bool checked);
 
+        void on_searchButton_toggled(bool checked);
+
     private:
         Ui::MainWindow* ui;
         MainWindowPrivate* d;

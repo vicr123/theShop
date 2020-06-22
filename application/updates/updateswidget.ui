@@ -312,7 +312,7 @@
                    <item>
                     <widget class="QPushButton" name="installButton">
                      <property name="text">
-                      <string>Install all updates</string>
+                      <string>Download All Updates</string>
                      </property>
                      <property name="icon">
                       <iconset theme="package-upgrade">

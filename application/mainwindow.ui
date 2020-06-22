@@ -80,6 +80,9 @@
          <property name="text">
           <string>Explore</string>
          </property>
+         <property name="icon">
+          <iconset theme="package"/>
+         </property>
          <property name="checkable">
           <bool>true</bool>
          </property>
@@ -101,6 +104,31 @@
          </property>
          <property name="text">
           <string>Updates</string>
+         </property>
+         <property name="icon">
+          <iconset theme="package-upgrade"/>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="searchButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>Search</string>
+         </property>
+         <property name="icon">
+          <iconset theme="edit-find"/>
          </property>
          <property name="checkable">
           <bool>true</bool>
@@ -133,6 +161,7 @@
      <widget class="tStackedWidget" name="stackedWidget">
       <widget class="QWidget" name="explorePage"/>
       <widget class="UpdatesWidget" name="updatesPage"/>
+      <widget class="SearchWidget" name="searchPage"/>
      </widget>
     </item>
    </layout>
@@ -153,6 +182,12 @@
    <slots>
     <signal>switchingFrame(int)</signal>
    </slots>
+  </customwidget>
+  <customwidget>
+   <class>SearchWidget</class>
+   <extends>QWidget</extends>
+   <header>search/searchwidget.h</header>
+   <container>1</container>
   </customwidget>
  </customwidgets>
  <resources>

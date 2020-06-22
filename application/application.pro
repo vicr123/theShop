@@ -1,4 +1,4 @@
-QT       += core gui thelib network
+QT       += core gui thelib network concurrent
 SHARE_APP_NAME = theshop
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
@@ -34,6 +34,12 @@ SOURCES += \
     mainwindow.cpp \
     metadatarepository.cpp \
     packagemodel.cpp \
+    popovers/appinfopopover.cpp \
+    popovers/screenshotbrowser.cpp \
+    popovers/screenshotwidget.cpp \
+    search/searchmodel.cpp \
+    search/searchwidget.cpp \
+    transactionpool.cpp \
     updates/updatesmodel.cpp \
     updates/updateswidget.cpp
 
@@ -41,11 +47,21 @@ HEADERS += \
     mainwindow.h \
     metadatarepository.h \
     packagemodel.h \
+    popovers/appinfopopover.h \
+    popovers/screenshotbrowser.h \
+    popovers/screenshotwidget.h \
+    search/searchmodel.h \
+    search/searchwidget.h \
+    transactionpool.h \
     updates/updatesmodel.h \
     updates/updateswidget.h
 
 FORMS += \
     mainwindow.ui \
+    popovers/appinfopopover.ui \
+    popovers/screenshotbrowser.ui \
+    popovers/screenshotwidget.ui \
+    search/searchwidget.ui \
     updates/updateswidget.ui
 
 unix {

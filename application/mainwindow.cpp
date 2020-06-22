@@ -43,6 +43,8 @@ MainWindow::MainWindow(QWidget* parent)
 
     ui->menuButton->setIconSize(SC_DPI_T(QSize(24, 24), QSize));
     ui->stackedWidget->setCurrentAnimation(tStackedWidget::SlideHorizontal);
+
+    this->setMinimumSize(SC_DPI_T(QSize(900, 700), QSize));
 }
 
 MainWindow::~MainWindow() {
@@ -59,5 +61,11 @@ void MainWindow::on_exploreButton_toggled(bool checked) {
 void MainWindow::on_updatesButton_toggled(bool checked) {
     if (checked) {
         ui->stackedWidget->setCurrentWidget(ui->updatesPage);
+    }
+}
+
+void MainWindow::on_searchButton_toggled(bool checked) {
+    if (checked) {
+        ui->stackedWidget->setCurrentWidget(ui->searchPage);
     }
 }
