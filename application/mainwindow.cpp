@@ -42,9 +42,22 @@ MainWindow::MainWindow(QWidget* parent)
     }
 
     ui->menuButton->setIconSize(SC_DPI_T(QSize(24, 24), QSize));
+    ui->stackedWidget->setCurrentAnimation(tStackedWidget::SlideHorizontal);
 }
 
 MainWindow::~MainWindow() {
     delete ui;
 }
 
+
+void MainWindow::on_exploreButton_toggled(bool checked) {
+    if (checked) {
+        ui->stackedWidget->setCurrentWidget(ui->explorePage);
+    }
+}
+
+void MainWindow::on_updatesButton_toggled(bool checked) {
+    if (checked) {
+        ui->stackedWidget->setCurrentWidget(ui->updatesPage);
+    }
+}

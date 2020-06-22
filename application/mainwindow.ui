@@ -70,6 +70,28 @@
         </widget>
        </item>
        <item>
+        <widget class="QPushButton" name="exploreButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>Explore</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
         <widget class="QPushButton" name="updatesButton">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
@@ -79,6 +101,12 @@
          </property>
          <property name="text">
           <string>Updates</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
          </property>
         </widget>
        </item>
@@ -102,9 +130,9 @@
      </widget>
     </item>
     <item>
-     <widget class="QStackedWidget" name="stackedWidget">
+     <widget class="tStackedWidget" name="stackedWidget">
+      <widget class="QWidget" name="explorePage"/>
       <widget class="UpdatesWidget" name="updatesPage"/>
-      <widget class="QWidget" name="page_2"/>
      </widget>
     </item>
    </layout>
@@ -116,6 +144,15 @@
    <extends>QWidget</extends>
    <header>updates/updateswidget.h</header>
    <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>tStackedWidget</class>
+   <extends>QStackedWidget</extends>
+   <header location="global">tstackedwidget.h</header>
+   <container>1</container>
+   <slots>
+    <signal>switchingFrame(int)</signal>
+   </slots>
   </customwidget>
  </customwidgets>
  <resources>

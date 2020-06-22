@@ -36,6 +36,11 @@ class MainWindow : public QMainWindow {
         MainWindow(QWidget* parent = nullptr);
         ~MainWindow();
 
+    private slots:
+        void on_exploreButton_toggled(bool checked);
+
+        void on_updatesButton_toggled(bool checked);
+
     private:
         Ui::MainWindow* ui;
         MainWindowPrivate* d;

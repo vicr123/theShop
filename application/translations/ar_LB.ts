@@ -10,6 +10,11 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="81"/>
+        <source>Explore</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="103"/>
         <source>Updates</source>
         <translation type="unfinished"></translation>
     </message>
@@ -84,47 +89,47 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../updates/updateswidget.cpp" line="129"/>
+        <location filename="../updates/updateswidget.cpp" line="130"/>
         <source>Getting prepared...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../updates/updateswidget.cpp" line="132"/>
+        <location filename="../updates/updateswidget.cpp" line="133"/>
         <source>Downloading packages...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../updates/updateswidget.cpp" line="135"/>
+        <location filename="../updates/updateswidget.cpp" line="136"/>
         <source>Installing packages...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../updates/updateswidget.cpp" line="138"/>
+        <location filename="../updates/updateswidget.cpp" line="139"/>
         <source>Updating packages...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../updates/updateswidget.cpp" line="141"/>
+        <location filename="../updates/updateswidget.cpp" line="142"/>
         <source>Finishing up...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../updates/updateswidget.cpp" line="144"/>
+        <location filename="../updates/updateswidget.cpp" line="145"/>
         <source>Reviewing downloaded packages...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../updates/updateswidget.cpp" line="147"/>
+        <location filename="../updates/updateswidget.cpp" line="148"/>
         <source>Waiting for other package managers...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../updates/updateswidget.cpp" line="150"/>
+        <location filename="../updates/updateswidget.cpp" line="151"/>
         <source>Waiting for authentication...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../updates/updateswidget.cpp" line="153"/>
+        <location filename="../updates/updateswidget.cpp" line="154"/>
         <source>Installing updates...</source>
         <translation type="unfinished"></translation>
     </message>

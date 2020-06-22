@@ -43,6 +43,7 @@ UpdatesWidget::UpdatesWidget(QWidget* parent) :
     d = new UpdatesWidgetPrivate();
 
     ui->mainUpdateWidget->setFixedWidth(SC_DPI(600));
+    ui->spinnerWidget->setFixedSize(SC_DPI_T(QSize(32, 32), QSize));
 
     d->model = new UpdatesModel(this);
     ui->updatesList->setModel(d->model);
@@ -102,7 +103,7 @@ void UpdatesWidget::updatePackagekit() {
         QDBusError err = watcher->error();
 
         QDBusArgument arg = watcher->reply().arguments().first().value<QDBusArgument>();
-        QList<QDBusObjectPath> transactionIds; //= watcher->reply().arguments().first().value<QList<QDBusObjectPath>>();
+        QList<QDBusObjectPath> transactionIds;
         arg >> transactionIds;
         for (QDBusObjectPath transaction : transactionIds) {
             if (d->transactions.contains(transaction)) continue;

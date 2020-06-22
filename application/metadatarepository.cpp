@@ -51,6 +51,10 @@ QList<AppStream::Component> MetadataRepository::componentsByPackageName(QString 
 
 tPromise<QIcon>* MetadataRepository::iconForComponent(AppStream::Component component, QSize size) {
     return tPromise<QIcon>::runOnNewThread([ = ](tPromiseFunctions<QIcon>::SuccessFunction res, tPromiseFunctions<QIcon>::FailureFunction rej) {
+        if (component.icons().isEmpty()) {
+            res(QIcon::fromTheme("generic-app"));
+        }
+
         QUrl url = component.icons().first().url();
 
         if (url.isLocalFile()) {
