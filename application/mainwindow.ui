@@ -67,6 +67,9 @@
           <iconset theme="theshop" resource="resources.qrc">
            <normaloff>:/icons/theshop.svg</normaloff>:/icons/theshop.svg</iconset>
          </property>
+         <property name="popupMode">
+          <enum>QToolButton::InstantPopup</enum>
+         </property>
         </widget>
        </item>
        <item>
@@ -81,7 +84,8 @@
           <string>Explore</string>
          </property>
          <property name="icon">
-          <iconset theme="package"/>
+          <iconset theme="package">
+           <normaloff>.</normaloff>.</iconset>
          </property>
          <property name="checkable">
           <bool>true</bool>
@@ -106,7 +110,8 @@
           <string>Updates</string>
          </property>
          <property name="icon">
-          <iconset theme="package-upgrade"/>
+          <iconset theme="package-upgrade">
+           <normaloff>.</normaloff>.</iconset>
          </property>
          <property name="checkable">
           <bool>true</bool>
@@ -128,7 +133,8 @@
           <string>Search</string>
          </property>
          <property name="icon">
-          <iconset theme="edit-find"/>
+          <iconset theme="edit-find">
+           <normaloff>.</normaloff>.</iconset>
          </property>
          <property name="checkable">
           <bool>true</bool>
@@ -159,21 +165,54 @@
     </item>
     <item>
      <widget class="tStackedWidget" name="stackedWidget">
-      <widget class="QWidget" name="explorePage"/>
+      <widget class="ExplorePage" name="explorePage"/>
       <widget class="UpdatesWidget" name="updatesPage"/>
       <widget class="SearchWidget" name="searchPage"/>
      </widget>
     </item>
    </layout>
   </widget>
+  <action name="actionFileBug">
+   <property name="icon">
+    <iconset theme="tools-report-bug">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>File Bug</string>
+   </property>
+  </action>
+  <action name="actionSources">
+   <property name="icon">
+    <iconset theme="commit">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Sources</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset theme="help-about">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset theme="application-exit">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
  </widget>
  <customwidgets>
-  <customwidget>
-   <class>UpdatesWidget</class>
-   <extends>QWidget</extends>
-   <header>updates/updateswidget.h</header>
-   <container>1</container>
-  </customwidget>
   <customwidget>
    <class>tStackedWidget</class>
    <extends>QStackedWidget</extends>
@@ -184,9 +223,21 @@
    </slots>
   </customwidget>
   <customwidget>
+   <class>UpdatesWidget</class>
+   <extends>QWidget</extends>
+   <header>updates/updateswidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
    <class>SearchWidget</class>
    <extends>QWidget</extends>
    <header>search/searchwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ExplorePage</class>
+   <extends>QWidget</extends>
+   <header>explore/explorepage.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

@@ -83,7 +83,7 @@
           </font>
          </property>
          <property name="text">
-          <string>Listen to your heart</string>
+          <string>What does your heart desire?</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
@@ -106,7 +106,7 @@
        <item>
         <widget class="QLabel" name="label_3">
          <property name="text">
-          <string>Find the application that your heart desires by method of typing your search query above</string>
+          <string>Go ahead and run a search, and we'll show you what you're looking for.</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>

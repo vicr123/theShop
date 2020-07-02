@@ -46,6 +46,7 @@ QList<AppStream::Component> MetadataRepository::componentById(QString id) {
 
 QList<AppStream::Component> MetadataRepository::componentsByPackageName(QString packageName) {
     return QtConcurrent::blockingFiltered(d->pool.components(), [ = ](const AppStream::Component & component) {
+        if (component.packageNames().isEmpty()) return false;
         return component.packageNames().contains(packageName);
     });
 }
@@ -59,29 +60,43 @@ QList<AppStream::Component> MetadataRepository::componentsBySearch(QString packa
 
 QList<AppStream::Component> MetadataRepository::componentsByName(QString name) {
     return QtConcurrent::blockingFiltered(d->pool.components(), [ = ](const AppStream::Component & component) {
+        if (component.packageNames().isEmpty()) return false;
         return component.name().toLower().contains(name.toLower());
     });
 }
 
+QList<AppStream::Component> MetadataRepository::componentsByCategory(QString category) {
+    return QtConcurrent::blockingFiltered(d->pool.components(), [ = ](const AppStream::Component & component) {
+        if (component.packageNames().isEmpty()) return false;
+        return component.hasCategory(category);
+    });
+}
+
 tPromise<QIcon>* MetadataRepository::iconForComponent(AppStream::Component component, QSize size) {
+    QString id = component.id();
     return tPromise<QIcon>::runOnNewThread([ = ](tPromiseFunctions<QIcon>::SuccessFunction res, tPromiseFunctions<QIcon>::FailureFunction rej) {
+        AppStream::Component component = d->pool.componentsById(id).first();
         if (component.icons().isEmpty()) {
             res(QIcon::fromTheme("generic-app"));
             return;
         }
 
-        QUrl url = component.icons().first().url();
+        QIcon icon;
+        for (AppStream::Icon ic : component.icons()) {
+            QUrl url = ic.url();
+            if (url.isLocalFile()) {
+                QPixmap px(url.toLocalFile());
+                icon.addPixmap(px);
+            } else {
+                QNetworkAccessManager mgr;
+                QNetworkReply* reply = mgr.get(QNetworkRequest(url));
+                reply->waitForReadyRead(3000);
 
-        if (url.isLocalFile()) {
-            res(QIcon(url.toLocalFile()));
-        } else {
-            QNetworkAccessManager mgr;
-            QNetworkReply* reply = mgr.get(QNetworkRequest(url));
-            reply->waitForReadyRead(3000);
-
-            QIcon icon(QPixmap(reply->readAll()));
-            res(icon);
+                QPixmap px(reply->readAll());
+                icon.addPixmap(px);
+            }
         }
+        res(icon);
     });
 }
 

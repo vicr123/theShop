@@ -30,6 +30,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    explore/categorycarousel.cpp \
+    explore/explorepage.cpp \
     main.cpp \
     mainwindow.cpp \
     metadatarepository.cpp \
@@ -44,6 +46,8 @@ SOURCES += \
     updates/updateswidget.cpp
 
 HEADERS += \
+    explore/categorycarousel.h \
+    explore/explorepage.h \
     mainwindow.h \
     metadatarepository.h \
     packagemodel.h \
@@ -57,6 +61,8 @@ HEADERS += \
     updates/updateswidget.h
 
 FORMS += \
+    explore/categorycarousel.ui \
+    explore/explorepage.ui \
     mainwindow.ui \
     popovers/appinfopopover.ui \
     popovers/screenshotbrowser.ui \

@@ -20,6 +20,10 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
+#include <QDesktopServices>
+#include <QUrl>
+#include <QMenu>
+#include <taboutdialog.h>
 #include <tcsdtools.h>
 
 struct MainWindowPrivate {
@@ -41,7 +45,20 @@ MainWindow::MainWindow(QWidget* parent)
         ui->csdLayoutRight->addWidget(d->csd.csdBoxForWidget(this));
     }
 
+    QMenu* menu = new QMenu(this);
+
+    QMenu* helpMenu = new QMenu(this);
+    helpMenu->setTitle(tr("Help"));
+    helpMenu->addAction(ui->actionFileBug);
+    helpMenu->addAction(ui->actionSources);
+    helpMenu->addSeparator();
+    helpMenu->addAction(ui->actionAbout);
+
+    menu->addMenu(helpMenu);
+    menu->addAction(ui->actionExit);
+
     ui->menuButton->setIconSize(SC_DPI_T(QSize(24, 24), QSize));
+    ui->menuButton->setMenu(menu);
     ui->stackedWidget->setCurrentAnimation(tStackedWidget::SlideHorizontal);
 
     this->setMinimumSize(SC_DPI_T(QSize(900, 700), QSize));
@@ -68,4 +85,21 @@ void MainWindow::on_searchButton_toggled(bool checked) {
     if (checked) {
         ui->stackedWidget->setCurrentWidget(ui->searchPage);
     }
+}
+
+void MainWindow::on_actionFileBug_triggered() {
+    QDesktopServices::openUrl(QUrl("https://github.com/vicr123/theshop/issues"));
+}
+
+void MainWindow::on_actionSources_triggered() {
+    QDesktopServices::openUrl(QUrl("https://github.com/vicr123/theshop"));
+}
+
+void MainWindow::on_actionAbout_triggered() {
+    tAboutDialog d;
+    d.exec();
+}
+
+void MainWindow::on_actionExit_triggered() {
+    QApplication::exit();
 }

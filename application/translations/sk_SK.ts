@@ -129,6 +129,27 @@
     </message>
 </context>
 <context>
+    <name>CategoryCarousel</name>
+    <message>
+        <location filename="../explore/categorycarousel.ui" line="14"/>
+        <source>Form</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../explore/categorycarousel.ui" line="41"/>
+        <source>TextLabel</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ExplorePage</name>
+    <message>
+        <location filename="../explore/explorepage.ui" line="14"/>
+        <source>Form</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>MainWindow</name>
     <message>
         <location filename="../mainwindow.ui" line="14"/>
@@ -136,18 +157,48 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="81"/>
+        <location filename="../mainwindow.ui" line="84"/>
         <source>Explore</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="106"/>
+        <location filename="../mainwindow.ui" line="110"/>
         <source>Updates</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="128"/>
+        <location filename="../mainwindow.ui" line="133"/>
         <source>Search</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="181"/>
+        <source>File Bug</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="190"/>
+        <source>Sources</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="199"/>
+        <source>About</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="208"/>
+        <source>Exit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="211"/>
+        <source>Ctrl+Q</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="51"/>
+        <source>Help</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -181,12 +232,12 @@
     </message>
     <message>
         <location filename="../search/searchwidget.ui" line="86"/>
-        <source>Listen to your heart</source>
+        <source>What does your heart desire?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../search/searchwidget.ui" line="109"/>
-        <source>Find the application that your heart desires by method of typing your search query above</source>
+        <source>Go ahead and run a search, and we&apos;ll show you what you&apos;re looking for.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

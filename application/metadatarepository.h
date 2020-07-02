@@ -34,6 +34,7 @@ class MetadataRepository : public QObject {
         QList<AppStream::Component> componentsByPackageName(QString packageName);
         QList<AppStream::Component> componentsBySearch(QString packageName);
         QList<AppStream::Component> componentsByName(QString name);
+        QList<AppStream::Component> componentsByCategory(QString category);
 
         tPromise<QIcon>* iconForComponent(AppStream::Component component, QSize size);
 

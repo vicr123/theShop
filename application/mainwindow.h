@@ -43,6 +43,14 @@ class MainWindow : public QMainWindow {
 
         void on_searchButton_toggled(bool checked);
 
+        void on_actionFileBug_triggered();
+
+        void on_actionSources_triggered();
+
+        void on_actionAbout_triggered();
+
+        void on_actionExit_triggered();
+
     private:
         Ui::MainWindow* ui;
         MainWindowPrivate* d;
