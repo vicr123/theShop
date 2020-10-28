@@ -68,5 +68,5 @@ void SearchWidget::on_resultList_activated(const QModelIndex& index) {
     connect(appInfo, &AppInfoPopover::done, popover, &tPopover::dismiss);
     connect(popover, &tPopover::dismissed, appInfo, &AppInfoPopover::deleteLater);
     connect(popover, &tPopover::dismissed, popover, &tPopover::deleteLater);
-    popover->show(this);
+    popover->show(this->window());
 }

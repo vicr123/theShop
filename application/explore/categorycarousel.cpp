@@ -62,7 +62,7 @@ CategoryCarousel::CategoryCarousel(QString category, ExplorePage* parent) :
             connect(appInfo, &AppInfoPopover::done, popover, &tPopover::dismiss);
             connect(popover, &tPopover::dismissed, appInfo, &AppInfoPopover::deleteLater);
             connect(popover, &tPopover::dismissed, popover, &tPopover::deleteLater);
-            popover->show(parent);
+            popover->show(this->window());
         });
         ui->componentsLayout->addWidget(button);
 

@@ -1,11 +1,12 @@
-QT += gui widgets thelib
+QT += gui widgets tdesktopenvironment
 
 TEMPLATE = lib
 CONFIG += plugin
+TARGET = theshop-thedesk-plugin
 
 CONFIG += c++11
 
-INCLUDEPATH += /usr/include/libthedesk /usr/include/thedesk/
+INCLUDEPATH += $$[QT_INSTALL_HEADERS]/libthedesk $$[QT_INSTALL_HEADERS]/thedesk/
 LIBS += -lthedesk
 CONFIG += link_pkgconfig
 PKGCONFIG += packagekitqt5

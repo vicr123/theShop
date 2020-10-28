@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string notr="true">Form</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <property name="spacing">
@@ -32,7 +32,7 @@
    <item>
     <widget class="tTitleLabel" name="titleLabel">
      <property name="text">
-      <string>App</string>
+      <string notr="true">App</string>
      </property>
     </widget>
    </item>
@@ -106,7 +106,8 @@
              <string>Install</string>
             </property>
             <property name="icon">
-             <iconset theme="package-install"/>
+             <iconset theme="package-install">
+              <normaloff>.</normaloff>.</iconset>
             </property>
            </widget>
           </item>
@@ -116,7 +117,8 @@
              <string>Launch</string>
             </property>
             <property name="icon">
-             <iconset theme="go-next"/>
+             <iconset theme="go-next">
+              <normaloff>.</normaloff>.</iconset>
             </property>
            </widget>
           </item>
@@ -126,7 +128,8 @@
              <string>Remove</string>
             </property>
             <property name="icon">
-             <iconset theme="package-remove"/>
+             <iconset theme="package-remove">
+              <normaloff>.</normaloff>.</iconset>
             </property>
            </widget>
           </item>
@@ -141,7 +144,7 @@
         <item>
          <widget class="QLabel" name="statusLabel">
           <property name="text">
-           <string>TextLabel</string>
+           <string notr="true">TextLabel</string>
           </property>
          </widget>
         </item>
@@ -209,7 +212,7 @@
             <x>0</x>
             <y>0</y>
             <width>475</width>
-            <height>202</height>
+            <height>199</height>
            </rect>
           </property>
           <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -251,7 +254,7 @@
              <item>
               <widget class="QLabel" name="descriptionLabel">
                <property name="text">
-                <string>TextLabel</string>
+                <string notr="true">TextLabel</string>
                </property>
                <property name="wordWrap">
                 <bool>true</bool>
@@ -319,6 +322,14 @@
  </widget>
  <customwidgets>
   <customwidget>
+   <class>tTitleLabel</class>
+   <extends>QLabel</extends>
+   <header location="global">ttitlelabel.h</header>
+   <slots>
+    <signal>backButtonClicked()</signal>
+   </slots>
+  </customwidget>
+  <customwidget>
    <class>tStackedWidget</class>
    <extends>QStackedWidget</extends>
    <header location="global">tstackedwidget.h</header>
@@ -328,23 +339,15 @@
    </slots>
   </customwidget>
   <customwidget>
-   <class>tCircularSpinner</class>
-   <extends>QWidget</extends>
-   <header location="global">tcircularspinner.h</header>
-   <container>1</container>
-  </customwidget>
-  <customwidget>
-   <class>tTitleLabel</class>
-   <extends>QLabel</extends>
-   <header location="global">ttitlelabel.h</header>
-   <slots>
-    <signal>backButtonClicked()</signal>
-   </slots>
-  </customwidget>
-  <customwidget>
    <class>tConditionalWidget</class>
    <extends>QWidget</extends>
    <header location="global">tconditionalwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>tCircularSpinner</class>
+   <extends>QWidget</extends>
+   <header location="global">tcircularspinner.h</header>
    <container>1</container>
   </customwidget>
   <customwidget>

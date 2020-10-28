@@ -27,7 +27,7 @@
 
 #include <statemanager.h>
 #include <powermanager.h>
-#include <application.h>
+#include <Applications/application.h>
 
 ShopDbus::ShopDbus(QObject* parent) : QObject(parent) {
     new DesktopSessionAdaptor(this);
@@ -41,7 +41,7 @@ ShopDbus::~ShopDbus() {
 
 void ShopDbus::RebootAndUpdate() {
     if (PackageKit::Daemon::global()->offline()->updatePrepared()) {
-        StateManager::powerManager()->showPowerOffConfirmation(PowerManager::RebootInstallUpdates, tr("%1, reboot and install updates? We'll go ahead and reboot to install updates in %n seconds if you don't do anything."));
+        StateManager::powerManager()->showPowerOffConfirmation(PowerManager::Reboot, tr("%1, reboot and install updates? We'll go ahead and reboot to install updates in %n seconds if you don't do anything."), {"update"});
     }
 }
 

@@ -4,44 +4,28 @@
 <context>
     <name>AppInfoPopover</name>
     <message>
-        <location filename="../popovers/appinfopopover.ui" line="14"/>
-        <source>Form</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../popovers/appinfopopover.ui" line="35"/>
-        <source>App</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../popovers/appinfopopover.ui" line="106"/>
         <source>Install</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../popovers/appinfopopover.ui" line="116"/>
+        <location filename="../popovers/appinfopopover.ui" line="117"/>
         <location filename="../popovers/appinfopopover.cpp" line="230"/>
         <source>Launch</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../popovers/appinfopopover.ui" line="126"/>
+        <location filename="../popovers/appinfopopover.ui" line="128"/>
         <source>Remove</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../popovers/appinfopopover.ui" line="144"/>
-        <location filename="../popovers/appinfopopover.ui" line="254"/>
-        <source>TextLabel</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../popovers/appinfopopover.ui" line="269"/>
+        <location filename="../popovers/appinfopopover.ui" line="272"/>
         <source>Visit Website</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../popovers/appinfopopover.ui" line="276"/>
+        <location filename="../popovers/appinfopopover.ui" line="279"/>
         <source>Donate</source>
         <translation type="unfinished"></translation>
     </message>
@@ -129,27 +113,6 @@
     </message>
 </context>
 <context>
-    <name>CategoryCarousel</name>
-    <message>
-        <location filename="../explore/categorycarousel.ui" line="14"/>
-        <source>Form</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../explore/categorycarousel.ui" line="41"/>
-        <source>TextLabel</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>ExplorePage</name>
-    <message>
-        <location filename="../explore/explorepage.ui" line="14"/>
-        <source>Form</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>MainWindow</name>
     <message>
         <location filename="../mainwindow.ui" line="14"/>
@@ -203,28 +166,7 @@
     </message>
 </context>
 <context>
-    <name>ScreenshotBrowser</name>
-    <message>
-        <location filename="../popovers/screenshotbrowser.ui" line="14"/>
-        <source>Form</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>ScreenshotWidget</name>
-    <message>
-        <location filename="../popovers/screenshotwidget.ui" line="14"/>
-        <source>Form</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>SearchWidget</name>
-    <message>
-        <location filename="../search/searchwidget.ui" line="14"/>
-        <source>Form</source>
-        <translation type="unfinished"></translation>
-    </message>
     <message>
         <location filename="../search/searchwidget.ui" line="41"/>
         <source>Search...</source>
@@ -255,11 +197,6 @@
 </context>
 <context>
     <name>UpdatesWidget</name>
-    <message>
-        <location filename="../updates/updateswidget.ui" line="14"/>
-        <source>Form</source>
-        <translation type="unfinished"></translation>
-    </message>
     <message>
         <location filename="../updates/updateswidget.ui" line="74"/>
         <source>Checking for updates</source>
@@ -299,11 +236,6 @@
     <message>
         <location filename="../updates/updateswidget.ui" line="362"/>
         <source>PROGRESS</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../updates/updateswidget.ui" line="369"/>
-        <source>TextLabel</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

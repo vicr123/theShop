@@ -86,7 +86,7 @@ void PackageKitDaemon::updateTx(QDBusObjectPath path) {
                 }
                 connect(notification, &tNotification::actionClicked, this, [ = ](QString key) {
                     if (key == "reboot") {
-                        StateManager::powerManager()->showPowerOffConfirmation(PowerManager::RebootInstallUpdates, tr("%1, reboot and install updates? We'll go ahead and reboot to install updates in %n seconds if you don't do anything."));
+                        StateManager::powerManager()->showPowerOffConfirmation(PowerManager::Reboot, tr("%1, reboot and install updates? We'll go ahead and reboot to install updates in %n seconds if you don't do anything."), {"update"});
                     }
                 });
                 notification->post();
