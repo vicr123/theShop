@@ -13,7 +13,7 @@ Requires:       qt5 the-libs-blueprint libtdesktopenvironment-blueprint libthede
 %endif
 
 %if 0%{?fedora} >= 33
-BuildRequires:  make qt5-qtbase-devel the-libs-blueprint-devel libtdesktopenvironment-blueprint-devel libthedesk-blueprint-devel PackageKit-Qt5-devel appstream-qt-devel
+BuildRequires:  make qt5-qtbase-devel the-libs-blueprint-devel libtdesktopenvironment-blueprint-devel libthedesk-blueprint-devel PackageKit-Qt5-devel appstream-qt-devel qt5-linguist
 Requires:       qt5-qtbase the-libs-blueprint libtdesktopenvironment-blueprint libthedesk-blueprint PackageKit-Qt5 appstream-qt
 %endif
 
