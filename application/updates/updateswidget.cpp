@@ -30,6 +30,8 @@ struct UpdatesWidgetPrivate {
     QStringList updates;
     bool requireRestart = false;
 
+    bool updatesDownloaded = false;
+
     UpdatesModel* model;
 
     QMap<QDBusObjectPath, PackageKit::Transaction*> transactions;
@@ -171,7 +173,7 @@ void UpdatesWidget::updatePackagekit() {
             ui->progressWidget->setVisible(false);
             ui->actionsWidget->setVisible(true);
 
-            if (QFile::exists("/var/lib/PackageKit/prepared-update")) {
+            if (d->updatesDownloaded) {
                 //Reboot to install updates
                 ui->installButton->setVisible(false);
                 ui->rebootInstallButton->setVisible(true);
@@ -184,6 +186,7 @@ void UpdatesWidget::updatePackagekit() {
 }
 
 void UpdatesWidget::on_checkUpdatesNoUpdateButton_clicked() {
+    d->updatesDownloaded = false;
     this->checkUpdates();
 }
 
@@ -192,6 +195,7 @@ void UpdatesWidget::on_checkUpdatesButton_clicked() {
 }
 
 void UpdatesWidget::on_installButton_clicked() {
+    d->updatesDownloaded = true;
     PackageKit::Daemon::updatePackages(d->updates, PackageKit::Transaction::TransactionFlagOnlyDownload);
 }
 
