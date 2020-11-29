@@ -109,7 +109,7 @@
     <message>
         <location filename="../popovers/appinfopopover.cpp" line="261"/>
         <source>Failed to remove %1.</source>
-        <translation>% 1 kaldırılamadı.</translation>
+        <translation>%1 kaldırılamadı.</translation>
     </message>
 </context>
 <context>
@@ -190,6 +190,7 @@
         <source>%n System Updates</source>
         <translation>
             <numerusform>%n Sistem Güncellemesi</numerusform>
+            <numerusform>%n Sistem Güncellemesiler</numerusform>
         </translation>
     </message>
 </context>
