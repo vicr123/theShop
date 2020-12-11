@@ -6,68 +6,68 @@
     <message>
         <location filename="../popovers/appinfopopover.ui" line="106"/>
         <source>Install</source>
-        <translation type="unfinished"></translation>
+        <translation>Installieren</translation>
     </message>
     <message>
         <location filename="../popovers/appinfopopover.ui" line="117"/>
         <location filename="../popovers/appinfopopover.cpp" line="230"/>
         <source>Launch</source>
-        <translation type="unfinished"></translation>
+        <translation>Starten</translation>
     </message>
     <message>
         <location filename="../popovers/appinfopopover.ui" line="128"/>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Entfernen</translation>
     </message>
     <message>
         <location filename="../popovers/appinfopopover.ui" line="272"/>
         <source>Visit Website</source>
-        <translation type="unfinished"></translation>
+        <translation>Website besuchen</translation>
     </message>
     <message>
         <location filename="../popovers/appinfopopover.ui" line="279"/>
         <source>Donate</source>
-        <translation type="unfinished"></translation>
+        <translation>Spenden</translation>
     </message>
     <message>
         <location filename="../popovers/appinfopopover.cpp" line="143"/>
         <source>Getting ready...</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Vorbereiten...</translation>
     </message>
     <message>
         <location filename="../popovers/appinfopopover.cpp" line="146"/>
         <source>Removing...</source>
-        <translation type="unfinished"></translation>
+        <translation>Entfernen...</translation>
     </message>
     <message>
         <location filename="../popovers/appinfopopover.cpp" line="149"/>
         <source>Downloading...</source>
-        <translation type="unfinished"></translation>
+        <translation>Herunterladen...</translation>
     </message>
     <message>
         <location filename="../popovers/appinfopopover.cpp" line="152"/>
         <source>Installing...</source>
-        <translation type="unfinished"></translation>
+        <translation>Installieren...</translation>
     </message>
     <message>
         <location filename="../popovers/appinfopopover.cpp" line="155"/>
         <source>Updating...</source>
-        <translation type="unfinished"></translation>
+        <translation>Updaten...</translation>
     </message>
     <message>
         <location filename="../popovers/appinfopopover.cpp" line="163"/>
         <source>Finishing up...</source>
-        <translation type="unfinished"></translation>
+        <translation>Fertig stellen...</translation>
     </message>
     <message>
         <location filename="../popovers/appinfopopover.cpp" line="166"/>
         <source>Waiting for package manager to become available...</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Wartet bis der Package-Manager verfügbar wird...</translation>
     </message>
     <message>
         <location filename="../popovers/appinfopopover.cpp" line="169"/>
         <source>Waiting for authorisation...</source>
-        <translation type="unfinished"></translation>
+        <translation>Wartet auf Authorisierung...</translation>
     </message>
     <message>
         <location filename="../popovers/appinfopopover.cpp" line="172"/>
@@ -77,13 +77,13 @@
     <message>
         <location filename="../popovers/appinfopopover.cpp" line="206"/>
         <source>Failed to install</source>
-        <translation type="unfinished"></translation>
+        <translation>Konnte nicht installiert werden</translation>
     </message>
     <message>
         <location filename="../popovers/appinfopopover.cpp" line="207"/>
         <location filename="../popovers/appinfopopover.cpp" line="256"/>
         <source>View Details</source>
-        <translation type="unfinished"></translation>
+        <translation>Details ansehen</translation>
     </message>
     <message>
         <location filename="../popovers/appinfopopover.cpp" line="211"/>
@@ -94,22 +94,22 @@
     <message>
         <location filename="../popovers/appinfopopover.cpp" line="212"/>
         <source>%1 failed to install.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 konnte nicht installiert werden.</translation>
     </message>
     <message>
         <location filename="../popovers/appinfopopover.cpp" line="228"/>
         <source>Installed Successfully</source>
-        <translation type="unfinished"></translation>
+        <translation>Erfolgreich installiert</translation>
     </message>
     <message>
         <location filename="../popovers/appinfopopover.cpp" line="255"/>
         <source>Failed to remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Konnte nicht entfernen</translation>
     </message>
     <message>
         <location filename="../popovers/appinfopopover.cpp" line="261"/>
         <source>Failed to remove %1.</source>
-        <translation type="unfinished"></translation>
+        <translation>Konnte nicht %1 entfernen.</translation>
     </message>
 </context>
 <context>
@@ -117,52 +117,52 @@
     <message>
         <location filename="../mainwindow.ui" line="14"/>
         <source>theShop</source>
-        <translation type="unfinished"></translation>
+        <translation>theShop</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="84"/>
         <source>Explore</source>
-        <translation type="unfinished"></translation>
+        <translation>Erkunden</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="110"/>
         <source>Updates</source>
-        <translation type="unfinished"></translation>
+        <translation>Updates</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="133"/>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Suchen</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="181"/>
         <source>File Bug</source>
-        <translation type="unfinished"></translation>
+        <translation>Bug reportieren</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="190"/>
         <source>Sources</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Quellen</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="199"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>Über</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="208"/>
         <source>Exit</source>
-        <translation type="unfinished"></translation>
+        <translation>Verlassen</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="211"/>
         <source>Ctrl+Q</source>
-        <translation type="unfinished"></translation>
+        <translation>Strg+Q</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="51"/>
         <source>Help</source>
-        <translation type="unfinished"></translation>
+        <translation>Hilfe</translation>
     </message>
 </context>
 <context>
@@ -170,12 +170,12 @@
     <message>
         <location filename="../search/searchwidget.ui" line="41"/>
         <source>Search...</source>
-        <translation type="unfinished"></translation>
+        <translation>Suchen...</translation>
     </message>
     <message>
         <location filename="../search/searchwidget.ui" line="86"/>
         <source>What does your heart desire?</source>
-        <translation type="unfinished"></translation>
+        <translation>Was begehrt dein Herz?</translation>
     </message>
     <message>
         <location filename="../search/searchwidget.ui" line="109"/>
@@ -188,9 +188,9 @@
     <message numerus="yes">
         <location filename="../updates/updatesmodel.cpp" line="53"/>
         <source>%n System Updates</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n Systemupdate</numerusform>
+            <numerusform>%n Systemupdates</numerusform>
         </translation>
     </message>
 </context>
@@ -199,7 +199,7 @@
     <message>
         <location filename="../updates/updateswidget.ui" line="74"/>
         <source>Checking for updates</source>
-        <translation type="unfinished"></translation>
+        <translation>Nach Updates überprüfen</translation>
     </message>
     <message>
         <location filename="../updates/updateswidget.ui" line="132"/>
@@ -225,22 +225,22 @@
     <message>
         <location filename="../updates/updateswidget.ui" line="315"/>
         <source>Download All Updates</source>
-        <translation type="unfinished"></translation>
+        <translation>Alle Updates herunterladen</translation>
     </message>
     <message>
         <location filename="../updates/updateswidget.ui" line="326"/>
         <source>Reboot and install updates</source>
-        <translation type="unfinished"></translation>
+        <translation>Starte neu und installiere Updates</translation>
     </message>
     <message>
         <location filename="../updates/updateswidget.ui" line="362"/>
         <source>PROGRESS</source>
-        <translation type="unfinished"></translation>
+        <translation>FORTSCHRITT</translation>
     </message>
     <message>
         <location filename="../updates/updateswidget.ui" line="395"/>
         <source>UPDATES</source>
-        <translation type="unfinished"></translation>
+        <translation>UPDATES</translation>
     </message>
     <message>
         <location filename="../updates/updateswidget.cpp" line="132"/>
