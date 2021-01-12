@@ -37,6 +37,9 @@ On Linux, run the following command in your terminal (with superuser permissions
 make install
 ```
 
+## Caveats
+I primarily test this on Arch Linux and everything seems to work. YMMV on other distributions.
+
 ---
 
 > © Victor Tran, 2021. This project is licensed under the GNU General Public License, version 3, or at your option, any later version.
