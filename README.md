@@ -19,6 +19,9 @@ theShop is a software store, using PackageKit and AppStream to be distro agnosti
 - [the-libs](https://github.com/vicr123/the-libs)
 - PackageKit
 - AppStream
+- theDesk (optional, build)
+  - To compile theDesk integration, theDesk must be installed.
+
 
 ## Build
 Run the following commands in your terminal. 

@@ -1,5 +1,8 @@
 TEMPLATE = subdirs
 
 SUBDIRS += \
-    application \
-    thedesk-plugin
+    application
+
+exists($$[QT_INSTALL_HEADERS]/thedesk/plugininterface.h) {
+    SUBDIRS += thedesk-plugin
+}
