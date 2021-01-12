@@ -6,7 +6,7 @@
 <img src="https://img.shields.io/github/license/vicr123/theshop?style=for-the-badge" />
 </p>
 
-theShop is a software store.
+theShop is a software store, using PackageKit and AppStream to be distro agnostic.
 
 ---
 
