@@ -72,7 +72,7 @@ bool ScreenshotWidget::eventFilter(QObject* watched, QEvent* event) {
         QRect imageRect;
         imageRect.setSize(d->image.size().scaled(this->width(), this->height(), Qt::KeepAspectRatio));
         imageRect.moveCenter(QPoint(this->width() / 2, this->height() / 2));
-        painter.drawPixmap(imageRect, d->image);
+        painter.drawPixmap(imageRect, d->image.scaled(imageRect.size(), Qt::IgnoreAspectRatio, Qt::SmoothTransformation));
     }
     return false;
 }
