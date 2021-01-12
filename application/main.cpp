@@ -42,6 +42,9 @@ int main(int argc, char* argv[]) {
     a.setOrganizationName("theSuite");
     a.setApplicationName("theShop");
     a.setDesktopFileName("com.vicr123.theshop");
+//    a.setApplicationUrl(tApplication::HelpContents, QUrl("https://help.vicr123.com/docs/thebeat/intro"));
+    a.setApplicationUrl(tApplication::Sources, QUrl("http://github.com/vicr123/theshop"));
+    a.setApplicationUrl(tApplication::FileBug, QUrl("http://github.com/vicr123/theshop/issues"));
 
     MetadataRepository::instance();
 

@@ -159,11 +159,6 @@
         <source>Ctrl+Q</source>
         <translation type="unfinished"></translation>
     </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="51"/>
-        <source>Help</source>
-        <translation type="unfinished"></translation>
-    </message>
 </context>
 <context>
     <name>SearchWidget</name>

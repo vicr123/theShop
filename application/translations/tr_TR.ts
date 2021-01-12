@@ -159,11 +159,6 @@
         <source>Ctrl+Q</source>
         <translation>Ctrl+Q</translation>
     </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="51"/>
-        <source>Help</source>
-        <translation>Yardım</translation>
-    </message>
 </context>
 <context>
     <name>SearchWidget</name>
@@ -190,7 +185,6 @@
         <source>%n System Updates</source>
         <translation>
             <numerusform>%n Sistem Güncellemesi</numerusform>
-            <numerusform>%n Sistem Güncellemesiler</numerusform>
         </translation>
     </message>
 </context>

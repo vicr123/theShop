@@ -159,11 +159,6 @@
         <source>Ctrl+Q</source>
         <translation>Strg+Q</translation>
     </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="51"/>
-        <source>Help</source>
-        <translation>Hilfe</translation>
-    </message>
 </context>
 <context>
     <name>SearchWidget</name>
@@ -265,7 +260,7 @@
     <message>
         <location filename="../updates/updateswidget.cpp" line="144"/>
         <source>Finishing up...</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Fertig stellen...</translation>
     </message>
     <message>
         <location filename="../updates/updateswidget.cpp" line="147"/>
