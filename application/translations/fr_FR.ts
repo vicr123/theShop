@@ -6,53 +6,53 @@
     <message>
         <location filename="../popovers/appinfopopover.ui" line="106"/>
         <source>Install</source>
-        <translation type="unfinished"></translation>
+        <translation>Installer</translation>
     </message>
     <message>
         <location filename="../popovers/appinfopopover.ui" line="117"/>
         <location filename="../popovers/appinfopopover.cpp" line="230"/>
         <source>Launch</source>
-        <translation type="unfinished"></translation>
+        <translation>Commencer</translation>
     </message>
     <message>
         <location filename="../popovers/appinfopopover.ui" line="128"/>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Supprimer</translation>
     </message>
     <message>
         <location filename="../popovers/appinfopopover.ui" line="272"/>
         <source>Visit Website</source>
-        <translation type="unfinished"></translation>
+        <translation>Visite le site Web</translation>
     </message>
     <message>
         <location filename="../popovers/appinfopopover.ui" line="279"/>
         <source>Donate</source>
-        <translation type="unfinished"></translation>
+        <translation>Faire un don</translation>
     </message>
     <message>
         <location filename="../popovers/appinfopopover.cpp" line="143"/>
         <source>Getting ready...</source>
-        <translation type="unfinished"></translation>
+        <translation>Préparation en cours ...</translation>
     </message>
     <message>
         <location filename="../popovers/appinfopopover.cpp" line="146"/>
         <source>Removing...</source>
-        <translation type="unfinished"></translation>
+        <translation>Supprimation en cours ...</translation>
     </message>
     <message>
         <location filename="../popovers/appinfopopover.cpp" line="149"/>
         <source>Downloading...</source>
-        <translation type="unfinished"></translation>
+        <translation>Téléchargement en cours ...</translation>
     </message>
     <message>
         <location filename="../popovers/appinfopopover.cpp" line="152"/>
         <source>Installing...</source>
-        <translation type="unfinished"></translation>
+        <translation>Installation en cours ...</translation>
     </message>
     <message>
         <location filename="../popovers/appinfopopover.cpp" line="155"/>
         <source>Updating...</source>
-        <translation type="unfinished"></translation>
+        <translation>Mise à jour en cours ...</translation>
     </message>
     <message>
         <location filename="../popovers/appinfopopover.cpp" line="163"/>
@@ -77,19 +77,19 @@
     <message>
         <location filename="../popovers/appinfopopover.cpp" line="206"/>
         <source>Failed to install</source>
-        <translation type="unfinished"></translation>
+        <translation>Échec à installer</translation>
     </message>
     <message>
         <location filename="../popovers/appinfopopover.cpp" line="207"/>
         <location filename="../popovers/appinfopopover.cpp" line="256"/>
         <source>View Details</source>
-        <translation type="unfinished"></translation>
+        <translation>Voir les détails</translation>
     </message>
     <message>
         <location filename="../popovers/appinfopopover.cpp" line="211"/>
         <location filename="../popovers/appinfopopover.cpp" line="260"/>
         <source>Failure Information</source>
-        <translation type="unfinished"></translation>
+        <translation>Information d&apos;erreur</translation>
     </message>
     <message>
         <location filename="../popovers/appinfopopover.cpp" line="212"/>
@@ -109,7 +109,7 @@
     <message>
         <location filename="../popovers/appinfopopover.cpp" line="261"/>
         <source>Failed to remove %1.</source>
-        <translation type="unfinished"></translation>
+        <translation>Échec à supprimer %1.</translation>
     </message>
 </context>
 <context>
@@ -122,17 +122,17 @@
     <message>
         <location filename="../mainwindow.ui" line="84"/>
         <source>Explore</source>
-        <translation type="unfinished"></translation>
+        <translation>Explorer</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="110"/>
         <source>Updates</source>
-        <translation type="unfinished"></translation>
+        <translation>Mises à jour</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="133"/>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Rechercher</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="181"/>
@@ -142,22 +142,22 @@
     <message>
         <location filename="../mainwindow.ui" line="190"/>
         <source>Sources</source>
-        <translation type="unfinished"></translation>
+        <translation>Sources</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="199"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>À propos</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="208"/>
         <source>Exit</source>
-        <translation type="unfinished"></translation>
+        <translation>Quitter</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="211"/>
         <source>Ctrl+Q</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+Q</translation>
     </message>
 </context>
 <context>
@@ -165,7 +165,7 @@
     <message>
         <location filename="../search/searchwidget.ui" line="41"/>
         <source>Search...</source>
-        <translation type="unfinished"></translation>
+        <translation>Rechercher ...</translation>
     </message>
     <message>
         <location filename="../search/searchwidget.ui" line="86"/>
@@ -183,9 +183,9 @@
     <message numerus="yes">
         <location filename="../updates/updatesmodel.cpp" line="53"/>
         <source>%n System Updates</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n mise à jour du système</numerusform>
+            <numerusform>%n mises à jour du système</numerusform>
         </translation>
     </message>
 </context>
@@ -204,7 +204,7 @@
     <message>
         <location filename="../updates/updateswidget.ui" line="142"/>
         <source>There are no pending updates to download and install.</source>
-        <translation type="unfinished"></translation>
+        <translation>Il n&apos;y a aucun mise à jour pour installer.</translation>
     </message>
     <message>
         <location filename="../updates/updateswidget.ui" line="167"/>
@@ -215,12 +215,12 @@
     <message>
         <location filename="../updates/updateswidget.ui" line="300"/>
         <source>ACTIONS</source>
-        <translation type="unfinished"></translation>
+        <translation>ACTIONS</translation>
     </message>
     <message>
         <location filename="../updates/updateswidget.ui" line="315"/>
         <source>Download All Updates</source>
-        <translation type="unfinished"></translation>
+        <translation>Télécharger tous les mises à jour</translation>
     </message>
     <message>
         <location filename="../updates/updateswidget.ui" line="326"/>
@@ -235,7 +235,7 @@
     <message>
         <location filename="../updates/updateswidget.ui" line="395"/>
         <source>UPDATES</source>
-        <translation type="unfinished"></translation>
+        <translation>MISES À JOUR</translation>
     </message>
     <message>
         <location filename="../updates/updateswidget.cpp" line="132"/>
