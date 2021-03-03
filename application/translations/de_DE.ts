@@ -72,7 +72,7 @@
     <message>
         <location filename="../popovers/appinfopopover.cpp" line="172"/>
         <source>Processing...</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Verarbeitet...</translation>
     </message>
     <message>
         <location filename="../popovers/appinfopopover.cpp" line="206"/>
@@ -89,7 +89,7 @@
         <location filename="../popovers/appinfopopover.cpp" line="211"/>
         <location filename="../popovers/appinfopopover.cpp" line="260"/>
         <source>Failure Information</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Information zum Fehlschlag</translation>
     </message>
     <message>
         <location filename="../popovers/appinfopopover.cpp" line="212"/>
@@ -175,7 +175,7 @@
     <message>
         <location filename="../search/searchwidget.ui" line="109"/>
         <source>Go ahead and run a search, and we&apos;ll show you what you&apos;re looking for.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Leg los und mache eine Suche, und wir werden dir zeigen was du suchst.</translation>
     </message>
 </context>
 <context>
@@ -204,18 +204,18 @@
     <message>
         <location filename="../updates/updateswidget.ui" line="142"/>
         <source>There are no pending updates to download and install.</source>
-        <translation type="unfinished"></translation>
+        <translation>Es gibt keine ausstehenden Updates zum Herunterladen und Installieren.</translation>
     </message>
     <message>
         <location filename="../updates/updateswidget.ui" line="167"/>
         <location filename="../updates/updateswidget.ui" line="337"/>
         <source>Check Again</source>
-        <translation type="unfinished"></translation>
+        <translation>Prüfe erneut</translation>
     </message>
     <message>
         <location filename="../updates/updateswidget.ui" line="300"/>
         <source>ACTIONS</source>
-        <translation type="unfinished"></translation>
+        <translation>AKTIONEN</translation>
     </message>
     <message>
         <location filename="../updates/updateswidget.ui" line="315"/>
@@ -240,22 +240,22 @@
     <message>
         <location filename="../updates/updateswidget.cpp" line="132"/>
         <source>Getting prepared...</source>
-        <translation type="unfinished"></translation>
+        <translation>Bereitet sich vor...</translation>
     </message>
     <message>
         <location filename="../updates/updateswidget.cpp" line="135"/>
         <source>Downloading packages...</source>
-        <translation type="unfinished"></translation>
+        <translation>Lade Pakete herunter...</translation>
     </message>
     <message>
         <location filename="../updates/updateswidget.cpp" line="138"/>
         <source>Installing packages...</source>
-        <translation type="unfinished"></translation>
+        <translation>Installiert Pakete...</translation>
     </message>
     <message>
         <location filename="../updates/updateswidget.cpp" line="141"/>
         <source>Updating packages...</source>
-        <translation type="unfinished"></translation>
+        <translation>Updatet Pakete...</translation>
     </message>
     <message>
         <location filename="../updates/updateswidget.cpp" line="144"/>
@@ -265,22 +265,22 @@
     <message>
         <location filename="../updates/updateswidget.cpp" line="147"/>
         <source>Reviewing downloaded packages...</source>
-        <translation type="unfinished"></translation>
+        <translation>Überprüft die heruntergeladenen Pakete...</translation>
     </message>
     <message>
         <location filename="../updates/updateswidget.cpp" line="150"/>
         <source>Waiting for other package managers...</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Wartet auf andere Paketmanager...</translation>
     </message>
     <message>
         <location filename="../updates/updateswidget.cpp" line="153"/>
         <source>Waiting for authentication...</source>
-        <translation type="unfinished"></translation>
+        <translation>Wartet auf Authentifikation...</translation>
     </message>
     <message>
         <location filename="../updates/updateswidget.cpp" line="156"/>
         <source>Installing updates...</source>
-        <translation type="unfinished"></translation>
+        <translation>Installiert Updates...</translation>
     </message>
 </context>
 <context>
@@ -288,7 +288,7 @@
     <message>
         <location filename="../main.cpp" line="37"/>
         <source>Software Store</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Software Store</translation>
     </message>
 </context>
 </TS>
