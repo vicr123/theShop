@@ -41,7 +41,10 @@ CategoryCarousel::CategoryCarousel(QString category, ExplorePage* parent) :
 
     QList<AppStream::Component> components = MetadataRepository::instance()->componentsByCategory(category);
     for (int i = 0; i < 32; i++) {
-        AppStream::Component component = components.takeAt(QRandomGenerator::global()->bounded(components.count()));
+        if (components.isEmpty()) break;
+
+        int componentIdx = QRandomGenerator::global()->bounded(components.count());
+        AppStream::Component component = components.at(componentIdx);
         QString componentId = component.id();
 
         QSize iconSize = SC_DPI_T(QSize(64, 64), QSize);
@@ -67,6 +70,7 @@ CategoryCarousel::CategoryCarousel(QString category, ExplorePage* parent) :
         ui->componentsLayout->addWidget(button);
 
         ui->scrollArea->setFixedHeight(button->sizeHint().height() + QApplication::style()->pixelMetric(QStyle::PM_ScrollBarExtent));
+        components.removeAt(componentIdx);
     }
 
 }

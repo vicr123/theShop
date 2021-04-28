@@ -42,7 +42,7 @@ HEADERS += \
 DISTFILES += \
     Plugin.json
 
-target.path = $$[QT_INSTALL_LIBS]/thedesk/plugins
+target.path = $$THELIBS_INSTALL_LIB/thedesk/plugins
 INSTALLS += target
 
 FORMS += \
