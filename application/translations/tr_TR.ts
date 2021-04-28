@@ -185,7 +185,6 @@
         <source>%n System Updates</source>
         <translation>
             <numerusform>%n Sistem Güncellemesi</numerusform>
-            <numerusform>%n Sistem Güncellemesileri</numerusform>
         </translation>
     </message>
 </context>

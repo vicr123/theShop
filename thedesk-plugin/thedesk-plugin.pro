@@ -6,6 +6,9 @@ TARGET = theshop-thedesk-plugin
 
 CONFIG += c++11
 
+# Include the-libs build tools
+include(/usr/share/the-libs/pri/varset.pri)
+
 INCLUDEPATH += $$[QT_INSTALL_HEADERS]/libthedesk $$[QT_INSTALL_HEADERS]/thedesk/
 LIBS += -lthedesk
 CONFIG += link_pkgconfig
